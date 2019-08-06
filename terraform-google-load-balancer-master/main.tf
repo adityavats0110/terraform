@@ -119,10 +119,10 @@ resource "google_compute_health_check" "default" {
 # CREATE THE STORAGE BUCKET FOR THE STATIC CONTENT
 # ------------------------------------------------------------------------------
 
-resource "google_storage_bucket_aditya" "static" {
+resource "google_storage_bucket" "static" {
   project = var.project
 
-  name          = "${var.name}-bucket"
+  name          = "${var.name}-bucket-aditya"
   location      = var.static_content_bucket_location
   storage_class = "MULTI_REGIONAL"
 
