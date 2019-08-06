@@ -15,18 +15,18 @@ If you want to quickly spin up a HTTP Load Balancer with multiple backends, you 
 
 This repo has the following folder structure:
 
-* [root](https://github.com/gruntwork-io/terraform-google-load-balancer/tree/master): The root folder contains an example of how to deploy a HTTP Load Balancer with multiple backends. See [http-multi-backend example documentation] for the documentation.
+* [root] : The root folder contains an example of how to deploy a HTTP Load Balancer with multiple backends. See [http-multi-backend example documentation] for the documentation.
 
-* [modules](https://github.com/gruntwork-io/terraform-google-load-balancer/blob/master/modules): This folder contains the main implementation code for this Module.
+* [modules] : This folder contains the main implementation code for this Module.
 
   The primary modules are:
 
     * [http-load-balancer] is used to create an [HTTP(S) External Load Balancer](https://cloud.google.com/load-balancing/docs/https/) using [global forwarding rules](https://cloud.google.com/load-balancing/docs/https/global-forwarding-rules).
     * [internal-load-balancer]is used to create an [Internal TCP/UDP Load Balancer](https://cloud.google.com/load-balancing/docs/internal/) using [internal forwarding rules](https://cloud.google.com/load-balancing/docs/internal/#forwarding_rule).
                                                                                                                                            
-* [examples]This folder contains examples of how to use the submodules.
+* [examples] : This folder contains examples of how to use the submodules.
 
-* [test] Automated tests for the submodules and examples.
+* [test] : Automated tests for the submodules and examples.
 
 
 
